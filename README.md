@@ -83,7 +83,37 @@ Esta é uma API RESTful para a aplicação Voll.med, destinada ao cadastro e ger
 		}
 	]
     ```
+ ### Atualização de Informações do Médico
 
+
+
+- **URL**: `/medicos`
+- **Método**: PUT
+- **Corpo da Requisição**: JSON contendo os dados de atualização do médico, incluindo o ID.
+- **Resposta de Sucesso**: 200 OK se a atualização for bem-sucedida.
+
+### Requisição
+
+```http
+PUT /medicos HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 123,
+  "nome": "Novo Nome do Médico",
+  "telefone": "11987654321",
+  "endereco": {
+    "logradouro": "Nova Rua",
+    "bairro": "Novo Bairro",
+    "cep": "12345678",
+    "cidade": "Nova Cidade",
+    "uf": "NC",
+    "numero": "10",
+    "complemento": "Novo Complemento"
+  }
+}
+
+```
 ## Contribuindo
 
 Sinta-se à vontade para enviar pull requests e reportar problemas. Toda contribuição é bem-vinda!
