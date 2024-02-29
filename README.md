@@ -114,6 +114,21 @@ Content-Type: application/json
 }
 
 ```
+## Desativação de Médico
+
+Marca um médico como inativo no sistema.
+
+- **URL**: `/medicos/{id}`
+- **Método**: DELETE
+- **Parâmetros de Path**: 
+  - `id`: O ID do médico que será marcado como inativo.
+- **Resposta de Sucesso**: 204 No Content se a operação for bem-sucedida.
+
+### Requisição
+
+```http
+DELETE /medicos/{id} HTTP/1.1
+```
 ## Contribuindo
 
 Sinta-se à vontade para enviar pull requests e reportar problemas. Toda contribuição é bem-vinda!
