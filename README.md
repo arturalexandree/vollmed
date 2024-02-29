@@ -66,20 +66,22 @@ Esta é uma API RESTful para a aplicação Voll.med, destinada ao cadastro e ger
 - **Método:** `GET`
 - **Resposta de Sucesso:** `200 OK` com a lista de médicos no formato JSON.
   ```json
-    [
-        {
-            "nome": "Artur Alexandre",
-            "email": "artur.alexandre@voll.med",
-            "crm": "188456",
-            "especialidade": "CARDIOLOGIA"
-        },
-        {
-            "nome": "Rodrigo Ferreira",
-            "email": "rodrigo.ferreira@voll.med",
-            "crm": "123456",
-            "especialidade": "ORTOPEDIA"
-        }
-    ]
+  [
+		{
+			"id": 3,
+			"nome": "Artur Alexandre",
+			"email": "artur.alexandre@voll.med",
+			"crm": "188456",
+			"especialidade": "CARDIOLOGIA"
+		},
+		{
+			"id": 1,
+			"nome": "Rodrigo Ferreira",
+			"email": "rodrigo.ferreira@voll.med",
+			"crm": "123456",
+			"especialidade": "ORTOPEDIA"
+		}
+	]
     ```
 
 ## Contribuindo
