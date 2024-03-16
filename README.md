@@ -13,6 +13,8 @@ Esta é uma API RESTful para a aplicação Voll.med, destinada ao cadastro e ger
 - MySQL Connector
 - Lombok (opcional)
 - Spring Boot Test para testes
+- Autenticação JWT com Java JWT 4.2.1
+- Segurança com Spring Boot Starter Security
 
 ## Configuração do Ambiente de Desenvolvimento
 
@@ -29,6 +31,18 @@ Esta é uma API RESTful para a aplicação Voll.med, destinada ao cadastro e ger
     ```
     mvn spring-boot:run
     ```
+## Mecanismo de Autenticação
+
+Todas as requisições, exceto o login, estão bloqueadas no sistema. Para liberar as requisições, é necessário fazer login com as seguintes credenciais:
+
+```json
+{
+    "login": "ana.souza@voll.med",
+    "senha": "123456"
+}
+```
+Após o login bem-sucedido, você receberá um token JWT. Nas próximas requisições, é necessário enviar o token JWT junto com a requisição para obter acesso às funcionalidades do sistema.
+
 
 ## Endpoints
 
